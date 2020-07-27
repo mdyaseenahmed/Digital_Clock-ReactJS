@@ -1,38 +1,42 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Rowdies:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(to right bottom,#1D3679,#63ACB0);
+  display: grid;
+  place-items: center;
+  font-family: 'Rowdies', cursive;
+  user-select: none;
+}
+
+.clock {
+  background: linear-gradient(to right bottom,#63ACB0);
+  padding: 30px;
   text-align: center;
+  color: #291850;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.5),
+              -3px -3px 7px rgba(255,255,255,0.05);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+span {
+  padding-top: 5px;
+  font-family: 'Merriweather', serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none;
+  color: purple;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a:hover {
+  color: #fff;
 }
